@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header {
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+}
+
+.header__block {
+    display: flex;
+    flex-direction: column;
+    padding-top: 217px;
+    gap: 32px;
+}
+
+.header__block_title {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.header__block_description {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.detailed {
+    font-weight: 700;
+}
+
+.header__block_button {
+    width: 234px;
+    height: 48px;
+    border-radius: 30px;
+    background: #9C0332;
+    color: #fff;
+    border: none;
+}
+
+.header__block_button:hover {
+    cursor: url(img/cursor.svg), pointer;
+    background: #EB443F;
+}
+
+.cards {
+    background: #000915;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    padding-bottom: 128px;
+}
+
+.cards__item {
+    grid-column: span 4;
+    height: 300px;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.cards__item:hover {
+    border: 3px solid #44D2FF;
+    cursor: url(img/cursor.svg), pointer;
+}
+
+.item_1 {
+    background-image: url(img/game1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.item_2 {
+    background-image: url(img/game2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.item_3 {
+    background-image: url(img/game3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 16px;
+}
+
+.game {
+    padding-top: 236px;
+    padding-left: 32px;
+}
