@@ -119,6 +119,14 @@ a {
     padding-bottom: 282px;
 }
 
+.seasons-reverse {
+    background: #000915;
+    display: flex;
+    gap: 135px;
+    padding-top: 282px;
+    padding-bottom: 282px;
+}
+
 .seasons__description {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -156,6 +164,10 @@ a {
 }
 
 @media (max-width: 767px) {
+    .header {
+        height: 735px;
+    }
+
     .header__block {
         align-items: center;
         margin-left: 16px;
@@ -173,6 +185,10 @@ a {
         width: 300px;
     }
 
+    .cards {
+        padding-top: 128px;
+    }
+
     .cards__item {
         grid-column: span 12;
         margin-left: 16px;
@@ -181,6 +197,13 @@ a {
 
     .seasons {
         flex-direction: column;
+        padding-top: 51px;
+        padding-bottom: 85px;
+        gap: 64px;
+    }
+
+    .seasons-reverse {
+        flex-direction: column-reverse;
         padding-top: 51px;
         padding-bottom: 85px;
         gap: 64px;
