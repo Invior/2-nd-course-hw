@@ -217,6 +217,10 @@ a {
         font-size: 32px;
     }
 
+    .seasons__image {
+        text-align: center;
+    }
+
     .seasons__par {
         font-size: 14px;
         text-align: center;
