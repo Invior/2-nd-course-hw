@@ -84,12 +84,13 @@ function fruitGame() {
     let fruit = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
     let randomFruit = fruit.sort(() => Math.random() - 0.5);
     let strRandomFruit = randomFruit.join(' ').toLowerCase();
+    let arrRandomFruit = strRandomFruit.split(' ');
     alert(randomFruit.join(' '));
     let firstFruit = prompt("Чему равнялся первый элемент массива?").toLowerCase();
     let lastFruit = prompt("Чему равнялся последний элемент массива?").toLowerCase();
-    if (strRandomFruit.startsWith(firstFruit) && strRandomFruit.endsWith(lastFruit)) {
+    if (arrRandomFruit[0] === firstFruit && arrRandomFruit[6] === lastFruit) {
         alert('Поздравляем! Вы угадали оба элемента');
-    } else if (strRandomFruit.startsWith(firstFruit) || strRandomFruit.endsWith(lastFruit)) {
+    } else if (arrRandomFruit[0] === firstFruit || arrRandomFruit[6] === lastFruit) {
         alert("Вы были близки к победе!")
     } else {
         alert("Вы не угадали ни одного элемента");
